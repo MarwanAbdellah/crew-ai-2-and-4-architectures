@@ -26,9 +26,6 @@ crew-ai-2-and-4-architectures/
 │   └── 2_agents_architecture.ipynb
 ├── 4-bots_architecture/
 │   └── 4_agents_architecture.ipynb
-├── content/                 # article, tldr, facts, metadata (outputs)
-├── docs/                    # step-by-step rebuild guides (outputs)
-├── reports/                 # rebuild summaries (outputs)
 ├── .env.example
 ├── README.md
 ├── .gitignore
@@ -40,23 +37,14 @@ crew-ai-2-and-4-architectures/
 ## 👥 Crews & Outputs
 
 ### Crew 1 — Session Rebuild Crew
-**Role:** Rebuild the codebase from a recorded session and document it.  
-**Outputs:**  
-- Reconstructed code (e.g., in a `rebuild/` folder)  
-- `docs/rebuild_guide.md` (step-by-step)  
-- `reports/rebuild_summary.md`
+- **Writer Agent:** long, structured article  
+- **Summarizer Agent:** Summary of the article generated  
 
 ### Crew 2 — Content Creation Crew (4 Agents)
 - **Writer Agent:** long, structured article  
 - **Summarizer Agent:** bullets + TL;DR  
 - **Fact-Checker Agent:** technical accuracy report  
 - **Metadata Agent:** SEO title, description, tags, and JSON metadata
-
-**Outputs:**  
-- `content/article.md`  
-- `content/tldr.md`  
-- `content/facts_report.md`  
-- `content/metadata.json`
 
 ---
 
